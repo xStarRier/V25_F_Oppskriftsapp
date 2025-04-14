@@ -5,8 +5,8 @@ function recipeView() {
     }
 
     return /*HTML*/`       
-     <div id="recipe-list">
-        ${recipeHtml}
-    </div>
+         <div id="recipe-list">
+            ${recipeHtml}
+        </div>
     `;
 }

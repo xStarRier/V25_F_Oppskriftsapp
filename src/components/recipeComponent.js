@@ -7,7 +7,7 @@ function recipeComponent(recipe) {
                 <h3>${recipe.title}</h3>
             </div>
             <div class="tag-list">
-                ${createTagListHtml(recipe.tags)}
+                ${createTagsHtml(recipe.tags)}
             </div>
             <p><strong>Ingredients:</strong></p>
             <ul class="ingredients-list">
@@ -23,20 +23,20 @@ function createInstructionsHtml(instructions) {
     let instructionsHtml = '';
     let counter = 1;
     for(const instruction of instructions) {
-        instructionsHtml += `<p>${counter+1}. ${instruction}</p>`;
+        instructionsHtml += `<p>${counter}. ${instruction}</p>`;
         counter++;
     }
 
     return instructionsHtml;
 }
 
-function createTagListHtml(tags) {
-    let tagListHtml = '';
+function createTagsHtml(tags) {
+    let tagsHtml = '';
     for(const tag of tags) {
-        tagListHtml += `<span class="tag">${tag}</span>`;
+        tagsHtml += `<span class="tag">${tag}</span>`;
     }
 
-    return tagListHtml;
+    return tagsHtml;
 }
 
 function createIngredientsHtml(ingredients) {

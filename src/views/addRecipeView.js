@@ -5,26 +5,26 @@ function addRecipeView() {
     <div class="content">
         <form id="recipe-form">
             <div class="form-group">
-                <label for="title">Recipe Title</label>
+                <label for="title">Tittel</label>
                 <input type="text" id="title" required>
             </div>
             
             <div class="form-group">
-                <label for="tags">Tags (comma separated)</label>
-                <input type="text" id="tags" placeholder="e.g. Breakfast, Vegetarian, Quick">
+                <label for="tags">Tags (kommaseparert)</label>
+                <input type="text" id="tags" placeholder="f.eks Frokost, Vegansk, Rask">
             </div>
             
             <div class="form-group">
-                <label for="ingredients">Ingredients</label>
-                <textarea id="ingredients" placeholder="Write each ingredient on a new line" required></textarea>
+                <label for="ingredients">Ingredienser</label>
+                <textarea id="ingredients" placeholder="Skriv hver ingrediens på sin egen linje" required></textarea>
             </div>
             
             <div class="form-group">
-                <label for="instructions">Instructions</label>
-                <textarea id="instructions" placeholder="Describe the step-by-step process" required></textarea>
+                <label for="instructions">Instruksjoner</label>
+                <textarea id="instructions" placeholder="Beskriv steg for steg" required></textarea>
             </div>
             
-            <button type="submit">Add Recipe</button>
+            <button type="submit">Legg til oppskrift</button>
         </form>
     </div>  
     `;

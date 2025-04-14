@@ -1,7 +1,10 @@
 const model = {
     app: {
-        addRecipe: false,
-        activeTab: 'recipes'
+        activeTab: '',
+        tabs: {
+            recipes: 'recipes',
+            addRecipe: 'addRecipe'
+        }
     },
     recipes: [
         {
