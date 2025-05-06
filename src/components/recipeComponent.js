@@ -1,6 +1,6 @@
 
 
-function recipeComponent(recipe) {   
+function recipeComponent(recipe,  uniqueTags) {   
     return /*HTML*/`
         <div class="recipe">
             <div class="recipe-header">
@@ -33,7 +33,7 @@ function createInstructionsHtml(instructions) {
 function createTagsHtml(tags) {
     let tagsHtml = '';
     for(const tag of tags) {
-        tagsHtml += `<span class="tag">${tag}</span>`;
+        tagsHtml += `<span class="tag" onclick="setTag('${tag}')">${tag}</span>`;
     }
 
     return tagsHtml;
@@ -47,3 +47,4 @@ function createIngredientsHtml(ingredients) {
 
     return ingredientsHtml;
 }
+

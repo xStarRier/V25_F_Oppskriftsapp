@@ -6,7 +6,7 @@ function addRecipeView() {
         <form id="recipe-form">
             <div class="form-group">
                 <label for="title">Tittel</label>
-                <input type="text" id="title" required>
+                <input type="text" id="title" required> 
             </div>
             
             <div class="form-group">
@@ -24,7 +24,8 @@ function addRecipeView() {
                 <textarea id="instructions" placeholder="Beskriv steg for steg" required></textarea>
             </div>
             
-            <button type="submit">Legg til oppskrift</button>
+            <button onclick="addNewRecipe()" type="submit">Legg til oppskrift</button>
+
         </form>
     </div>  
     `;

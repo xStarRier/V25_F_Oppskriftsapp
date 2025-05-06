@@ -4,7 +4,9 @@ const model = {
         tabs: {
             recipes: 'recipes',
             addRecipe: 'addRecipe'
-        }
+        },
+        searchInput:'',
+        searchTag:''
     },
     recipes: [
         {

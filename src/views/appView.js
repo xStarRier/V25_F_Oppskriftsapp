@@ -21,7 +21,8 @@ function appView() {
         </header>    
         
         <div class="search">
-            <input type="text" id="search" placeholder="Søk oppskrifter...">
+            <input type="text" id="search" onchange="searchRecipe()" placeholder="Søk oppskrifter...">
+            <button onclick="resetInput()">Se alle</button>
         </div>
         
         <div class="tabs">
